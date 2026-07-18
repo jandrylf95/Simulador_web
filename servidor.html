@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Web - Simulador Web</title>
+</head>
+<body>
+
+<header>
+    <h1>Simulador Web Educativo</h1>
+    <p>Cómo funciona la Web: desde que escribimos una URL hasta que vemos la página.</p>
+
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="solicitud.html">1. Solicitud HTTP</a> |
+        <a href="respuesta.html">3. Respuesta HTML5</a> |
+        <a href="ejemplo.html">4. Ejemplo práctico</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <h2>Procesamiento en el servidor web</h2>
+
+    <p>
+        Cuando la petición llega al servidor, este la interpreta, ejecuta la lógica
+        que haga falta, consulta datos si es necesario y arma la respuesta que le
+        devolverá al navegador.
+    </p>
+
+    <section>
+        <h3>¿Qué es un servidor web?</h3>
+        <p>
+            Un servidor web es un programa que recibe peticiones HTTP y devuelve recursos.
+            Es el punto de comunicación entre las plataformas y los lenguajes de programación.
+            Ejemplos conocidos son <strong>Apache</strong> y el entorno local <strong>XAMPP</strong>,
+            que pueden servir tanto contenido estático (HTML, CSS, imágenes) como dinámico
+            (generado con PHP u otros lenguajes).
+        </p>
+
+        <figure>
+            <img src="img/servidor-flujo.svg" width="700"
+                 alt="Diagrama del flujo cliente-servidor: el servidor recibe la petición, procesa la lógica, consulta la base de datos y arma la respuesta HTTP.">
+            <figcaption>Figura 3. Flujo de procesamiento dentro del servidor.</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Pasos del procesamiento</h3>
+        <ol>
+            <li>Recibe la petición HTTP del cliente.</li>
+            <li>Procesa la lógica del lado del servidor (por ejemplo PHP, Python o Node.js).</li>
+            <li>Si hace falta, consulta una base de datos.</li>
+            <li>Arma el documento HTML y las cabeceras de respuesta.</li>
+            <li>Envía la respuesta HTTP de vuelta al navegador.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Ejemplo de un encabezado HTTP de respuesta</h3>
+        <p>
+            Antes del contenido HTML, el servidor envía una cabecera con el código de estado
+            y algunos datos sobre el recurso entregado:
+        </p>
+
+        <pre>
+HTTP/1.1 200 OK
+Date: Fri, 29 May 2026 14:30:00 GMT
+Server: Apache/2.4.58 (Unix)
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1840
+Connection: keep-alive
+
+(a continuación viaja el documento HTML...)
+        </pre>
+
+        <p>Algunos códigos de estado que conviene conocer:</p>
+
+        <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+                <th>Código</th>
+                <th>Significado</th>
+            </tr>
+            <tr>
+                <td>200 OK</td>
+                <td>La petición tuvo éxito y se devuelve el recurso.</td>
+            </tr>
+            <tr>
+                <td>301 / 302</td>
+                <td>Redirección a otra dirección.</td>
+            </tr>
+            <tr>
+                <td>403 Forbidden</td>
+                <td>El acceso al recurso está prohibido.</td>
+            </tr>
+            <tr>
+                <td>404 Not Found</td>
+                <td>El recurso solicitado no existe.</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>Error interno del servidor.</td>
+            </tr>
+        </table>
+
+        <p>
+            El código <strong>200</strong> indica éxito. La cabecera Content-Type le dice
+            al navegador que debe interpretar la respuesta como HTML.
+        </p>
+    </section>
+
+    <hr>
+
+    <p>
+        <a href="solicitud.html">&laquo; 1. La solicitud HTTP</a> &nbsp;|&nbsp;
+        <a href="respuesta.html">3. Respuesta y HTML5 &raquo;</a>
+    </p>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>
+        Simulador Web Educativo - Fundamentos de Tecnologías Web (Unidades 1 a 3)<br>
+    </p>
+</footer>
+
+</body>
+</html>

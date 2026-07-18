@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Simulador Web</title>
+</head>
+<body>
+
+<!-- Encabezado del sitio -->
+<header>
+    <h1>Simulador Web Educativo</h1>
+    <p>Cómo funciona la Web: desde que escribimos una URL hasta que vemos la página.</p>
+
+    <!-- Menu de navegacion -->
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="solicitud.html">1. Solicitud HTTP</a> |
+        <a href="servidor.html">2. Servidor</a> |
+        <a href="respuesta.html">3. Respuesta HTML5</a> |
+        <a href="ejemplo.html">4. Ejemplo práctico</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <h2>¿Qué ocurre al ingresar una URL?</h2>
+
+    <p>
+        Cada vez que escribimos una dirección en el navegador y presionamos Enter,
+        se inicia un proceso de comunicación entre el navegador y un servidor.
+        En este sitio vamos a recorrer ese proceso paso a paso.
+    </p>
+
+    <section>
+        <h3>El proceso en pocas palabras</h3>
+        <p>
+            La Web funciona con un modelo <strong>cliente - servidor</strong>.
+            El navegador (cliente) pide un recurso y el servidor se lo entrega.
+            Todo esto ocurre gracias al protocolo <strong>HTTP</strong>, que define
+            la forma en que se piden y se entregan los documentos.
+        </p>
+
+        <figure>
+            <img src="img/flujo-general.svg" width="700"
+                 alt="Esquema del flujo completo: el usuario escribe una URL, el navegador envía la petición al servidor y este responde con el HTML.">
+            <figcaption>Figura 1. Recorrido de una petición web, desde el URL hasta la página.</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Las 5 fases que vamos a ver</h3>
+        <p>Cada página de este sitio explica una fase del proceso. Conviene seguir el orden:</p>
+        <ol>
+            <li>El usuario ingresa una URL en el navegador.</li>
+            <li>El navegador realiza una petición HTTP hacia el servidor.</li>
+            <li>El servidor procesa la solicitud y prepara el recurso.</li>
+            <li>Se envía una respuesta HTTP con el documento HTML.</li>
+            <li>El navegador interpreta el HTML y muestra la página.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>¿Qué es una URL?</h3>
+        <p>
+            Una URL (Uniform Resource Locator) es la dirección de un recurso en la Web.
+            Está formada por varias partes:
+        </p>
+        <ul>
+            <li><strong>Protocolo:</strong> https:// (indica cómo se comunican navegador y servidor).</li>
+            <li><strong>Dominio:</strong> www.utpl.edu.ec (identifica al servidor).</li>
+            <li><strong>Ruta:</strong> /carreras/index.html (señala el recurso específico).</li>
+        </ul>
+
+        <p>
+            <em>Nota:</em> la "W" representa la World Wide Web, que NO es un protocolo de correo,
+            sino un sistema de documentos enlazados que se acceden mediante HTTP.
+        </p>
+    </section>
+
+    <hr>
+
+    <p>Siguiente paso: <a href="solicitud.html">1. La solicitud HTTP &raquo;</a></p>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>
+        Simulador Web Educativo - Fundamentos de Tecnologías Web (Unidades 1 a 3)<br>
+    </p>
+</footer>
+
+</body>
+</html>

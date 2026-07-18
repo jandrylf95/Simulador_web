@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" font-family="Segoe UI, sans-serif">
+  <rect width="600" height="420" fill="#ffffff"/>
+  <text x="300" y="28" text-anchor="middle" font-size="15" fill="#0C447C" font-weight="700">Anatomía semántica de una página HTML5</text>
+
+  <!-- header -->
+  <g transform="translate(60,50)">
+    <rect width="480" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+    <text x="240" y="24" text-anchor="middle" font-size="12" fill="#0C447C" font-weight="700">&lt;header&gt;</text>
+    <text x="240" y="40" text-anchor="middle" font-size="9" fill="#4A5568">Encabezado: logo, título del sitio</text>
+  </g>
+
+  <!-- nav -->
+  <g transform="translate(60,108)">
+    <rect width="480" height="38" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+    <text x="240" y="18" text-anchor="middle" font-size="12" fill="#633806" font-weight="700">&lt;nav&gt;</text>
+    <text x="240" y="32" text-anchor="middle" font-size="9" fill="#4A5568">Menú de navegación</text>
+  </g>
+
+  <!-- main: article + aside -->
+  <g transform="translate(60,154)">
+    <rect width="480" height="170" rx="8" fill="#f4f6f9" stroke="#0F6E56" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="14" y="20" font-size="11" fill="#085041" font-weight="700">&lt;main&gt;</text>
+
+    <!-- article -->
+    <g transform="translate(20,30)">
+      <rect width="290" height="125" rx="8" fill="#E1F5EE" stroke="#0F6E56"/>
+      <text x="145" y="24" text-anchor="middle" font-size="12" fill="#085041" font-weight="700">&lt;article&gt;</text>
+      <text x="145" y="42" text-anchor="middle" font-size="9" fill="#4A5568">Contenido principal autónomo</text>
+      <rect x="30" y="56" width="230" height="46" rx="6" fill="#fff" stroke="#9FE1CB"/>
+      <text x="145" y="76" text-anchor="middle" font-size="11" fill="#0F6E56" font-weight="600">&lt;section&gt;</text>
+      <text x="145" y="92" text-anchor="middle" font-size="8" fill="#4A5568">Secciones temáticas</text>
+    </g>
+
+    <!-- aside -->
+    <g transform="translate(325,30)">
+      <rect width="135" height="125" rx="8" fill="#FAEEDA" stroke="#854F0B"/>
+      <text x="67" y="24" text-anchor="middle" font-size="12" fill="#633806" font-weight="700">&lt;aside&gt;</text>
+      <text x="67" y="44" text-anchor="middle" font-size="8" fill="#4A5568">Contenido</text>
+      <text x="67" y="56" text-anchor="middle" font-size="8" fill="#4A5568">complementario</text>
+      <text x="67" y="68" text-anchor="middle" font-size="8" fill="#4A5568">(barra lateral)</text>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <g transform="translate(60,332)">
+    <rect width="480" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+    <text x="240" y="22" text-anchor="middle" font-size="12" fill="#0C447C" font-weight="700">&lt;footer&gt;</text>
+    <text x="240" y="38" text-anchor="middle" font-size="9" fill="#4A5568">Pie: créditos, enlaces, contacto</text>
+  </g>
+
+  <text x="300" y="404" text-anchor="middle" font-size="10" fill="#4A5568" font-style="italic">Cada etiqueta describe el significado del contenido, no solo su apariencia</text>
+</svg>

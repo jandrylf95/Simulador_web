@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud HTTP - Simulador Web</title>
+</head>
+<body>
+
+<header>
+    <h1>Simulador Web Educativo</h1>
+    <p>Cómo funciona la Web: desde que escribimos una URL hasta que vemos la página.</p>
+
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="solicitud.html">1. Solicitud HTTP</a> |
+        <a href="servidor.html">2. Servidor</a> |
+        <a href="respuesta.html">3. Respuesta HTML5</a> |
+        <a href="ejemplo.html">4. Ejemplo práctico</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <h2>La solicitud HTTP</h2>
+
+    <p>
+        Cuando el navegador ya conoce la dirección del servidor, le envía un mensaje
+        llamado petición (o <em>request</em>). Ese mensaje indica qué recurso se quiere y de qué forma.
+    </p>
+
+    <section>
+        <h3>¿Qué contiene una petición?</h3>
+        <p>
+            Una petición HTTP tiene una línea inicial (con el método y la ruta),
+            unas cabeceras (datos extra como el idioma o el tipo de contenido aceptado)
+            y a veces un cuerpo con información.
+        </p>
+
+        <figure>
+            <img src="img/peticion-http.svg" width="650"
+                 alt="Esquema de una petición HTTP con la línea GET, el host, el user-agent y las cabeceras que envía el cliente al servidor.">
+            <figcaption>Figura 2. Estructura de una petición HTTP.</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Métodos HTTP: GET y POST</h3>
+        <p>
+            El método indica qué acción quiere hacer el cliente sobre el recurso.
+            Los más usados son GET y POST. En la siguiente tabla se comparan:
+        </p>
+
+        <!-- uso border="1" para que se vean las lineas de la tabla -->
+        <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Método</th>
+                    <th>Descripción</th>
+                    <th>Cuándo se usa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>Solicita datos de un recurso. Los parámetros van visibles en la URL.</td>
+                    <td>Cargar una página, hacer una búsqueda, abrir un enlace.</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>Envía datos al servidor en el cuerpo de la petición (no se ven en la URL).</td>
+                    <td>Enviar un formulario de registro o de inicio de sesión.</td>
+                </tr>
+                <tr>
+                    <td>HEAD</td>
+                    <td>Pide solo las cabeceras de la respuesta, sin el cuerpo.</td>
+                    <td>Comprobar si un recurso existe o cuándo se modificó.</td>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td>Crea o actualiza por completo un recurso en el servidor.</td>
+                    <td>Actualizar un registro desde una API.</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>Pide eliminar un recurso.</td>
+                    <td>Borrar un registro mediante una API.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <strong>Diferencia clave:</strong> usamos GET cuando solo queremos obtener
+            información y POST cuando necesitamos enviar datos de forma más segura,
+            como una contraseña.
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Para revisar más</h3>
+        <p>La documentación oficial de Mozilla explica todos los métodos con ejemplos:</p>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods" target="_blank">
+                    MDN Web Docs - Métodos HTTP
+                </a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Overview" target="_blank">
+                    MDN Web Docs - Introducción a HTTP
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <p>
+        <a href="index.html">&laquo; Inicio</a> &nbsp;|&nbsp;
+        <a href="servidor.html">2. El servidor web &raquo;</a>
+    </p>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>
+        Simulador Web Educativo - Fundamentos de Tecnologías Web (Unidades 1 a 3)<br>
+    </p>
+</footer>
+
+</body>
+</html>

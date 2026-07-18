@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="Segoe UI, sans-serif">
+  <defs>
+    <marker id="ar5" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#854F0B"/>
+    </marker>
+  </defs>
+  <rect width="680" height="300" fill="#ffffff"/>
+  <text x="340" y="28" text-anchor="middle" font-size="15" fill="#0C447C" font-weight="700">Del código HTML al render visual</text>
+
+  <!-- Código -->
+  <g transform="translate(40,60)">
+    <rect width="260" height="190" rx="10" fill="#0f1b2d" stroke="#1d3a5f"/>
+    <text x="16" y="28" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;h1&gt;</text>
+    <text x="50" y="28" font-size="10" fill="#e3ecf7" font-family="monospace">Mi página</text>
+    <text x="135" y="28" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;/h1&gt;</text>
+
+    <text x="16" y="52" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;img</text>
+    <text x="50" y="52" font-size="10" fill="#f6c177" font-family="monospace">src="..."&gt;</text>
+
+    <text x="16" y="76" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;ul&gt;</text>
+    <text x="30" y="94" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;li&gt;</text>
+    <text x="55" y="94" font-size="10" fill="#e3ecf7" font-family="monospace">Item</text>
+    <text x="16" y="112" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;/ul&gt;</text>
+
+    <text x="16" y="136" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;table&gt;</text>
+    <text x="16" y="160" font-size="10" fill="#7fd1ff" font-family="monospace">&lt;form&gt;</text>
+    <text x="140" y="184" font-size="9" fill="#6b7d94" font-family="monospace">// código fuente</text>
+  </g>
+
+  <!-- Flecha motor -->
+  <g transform="translate(312,135)">
+    <path d="M0 20 L56 20" stroke="#854F0B" stroke-width="2.5" marker-end="url(#ar5)" fill="none"/>
+    <text x="28" y="12" text-anchor="middle" font-size="9" fill="#854F0B" font-weight="700">motor de</text>
+    <text x="28" y="40" text-anchor="middle" font-size="9" fill="#854F0B" font-weight="700">render</text>
+  </g>
+
+  <!-- Render visual (ventana navegador) -->
+  <g transform="translate(390,60)">
+    <rect width="250" height="190" rx="10" fill="#fff" stroke="#85B7EB" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="22" rx="10" fill="#185FA5"/>
+    <rect x="0" y="11" width="250" height="11" fill="#185FA5"/>
+    <circle cx="14" cy="11" r="3" fill="#fff" opacity="0.8"/>
+    <circle cx="26" cy="11" r="3" fill="#fff" opacity="0.8"/>
+
+    <text x="16" y="48" font-size="15" fill="#0C447C" font-weight="700">Mi página</text>
+    <rect x="16" y="58" width="100" height="40" rx="5" fill="#E6F1FB" stroke="#85B7EB"/>
+    <text x="66" y="82" text-anchor="middle" font-size="9" fill="#4A5568">[ imagen ]</text>
+
+    <circle cx="130" cy="68" r="2.5" fill="#185FA5"/><text x="140" y="71" font-size="9" fill="#1A2433">Item de lista</text>
+    <circle cx="130" cy="84" r="2.5" fill="#185FA5"/><text x="140" y="87" font-size="9" fill="#1A2433">Item de lista</text>
+
+    <rect x="16" y="108" width="218" height="22" fill="#E1F5EE" stroke="#0F6E56"/>
+    <line x1="125" y1="108" x2="125" y2="130" stroke="#0F6E56"/>
+    <text x="20" y="123" font-size="8" fill="#085041">Celda</text>
+    <text x="129" y="123" font-size="8" fill="#085041">Celda</text>
+
+    <rect x="16" y="140" width="140" height="18" rx="4" fill="#f4f6f9" stroke="#D9E0E8"/>
+    <text x="22" y="153" font-size="8" fill="#4A5568">campo de formulario</text>
+    <rect x="164" y="140" width="50" height="18" rx="4" fill="#185FA5"/>
+    <text x="189" y="153" text-anchor="middle" font-size="8" fill="#fff">Enviar</text>
+  </g>
+
+  <text x="340" y="285" text-anchor="middle" font-size="11" fill="#4A5568">El navegador interpreta las etiquetas y las convierte en elementos visuales para el usuario</text>
+</svg>

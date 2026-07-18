@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuesta HTML5 - Simulador Web</title>
+</head>
+<body>
+
+<header>
+    <h1>Simulador Web Educativo</h1>
+    <p>Cómo funciona la Web: desde que escribimos una URL hasta que vemos la página.</p>
+
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="solicitud.html">1. Solicitud HTTP</a> |
+        <a href="servidor.html">2. Servidor</a> |
+        <a href="respuesta.html">3. Respuesta HTML5</a> |
+        <a href="ejemplo.html">4. Ejemplo práctico</a>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+    <h2>Respuesta y renderizado HTML5</h2>
+
+    <p>
+        El navegador recibe el documento HTML dentro de la respuesta y empieza a interpretarlo.
+        HTML5 incorpora etiquetas semánticas, que describen el significado de cada parte de la página.
+    </p>
+
+    <section>
+        <h3>¿Por qué etiquetas semánticas?</h3>
+        <p>
+            Las etiquetas semánticas indican qué tipo de contenido tiene cada sección,
+            y no solamente cómo se ve. Esto mejora la accesibilidad (los lectores de pantalla
+            entienden mejor la estructura) y también el SEO (los buscadores interpretan mejor la página).
+        </p>
+
+        <figure>
+            <img src="img/estructura-semantica.svg" width="550"
+                 alt="Esquema de la estructura semántica de HTML5 con header, nav, main, article, section, aside y footer.">
+            <figcaption>Figura 4. Principales etiquetas semánticas de HTML5.</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Elementos semánticos y su función</h3>
+        <ul>
+            <li><strong>&lt;header&gt;</strong> - encabezado de la página o de una sección.</li>
+            <li><strong>&lt;nav&gt;</strong> - bloque de enlaces de navegación.</li>
+            <li><strong>&lt;main&gt;</strong> - contenido principal de la página.</li>
+            <li><strong>&lt;article&gt;</strong> - contenido que tiene sentido por sí mismo.</li>
+            <li><strong>&lt;section&gt;</strong> - agrupa contenido relacionado por tema.</li>
+            <li><strong>&lt;aside&gt;</strong> - contenido complementario, como una barra lateral.</li>
+            <li><strong>&lt;footer&gt;</strong> - pie de página con créditos o enlaces.</li>
+            <li><strong>&lt;figure&gt; y &lt;figcaption&gt;</strong> - una imagen junto con su descripción.</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Ejemplo de código HTML5</h3>
+        <p>Así se ve una estructura semántica básica que el navegador va a interpretar:</p>
+
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;Encabezado del sitio&lt;/header&gt;
+    &lt;nav&gt;Menú de navegación&lt;/nav&gt;
+    &lt;main&gt;
+      &lt;article&gt;
+        &lt;h1&gt;Título principal&lt;/h1&gt;
+        &lt;section&gt;Contenido por tema&lt;/section&gt;
+      &lt;/article&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;Pie de página&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <p>
+            De hecho, esta misma página usa header, nav, main, section y footer
+            para organizar su contenido de forma semántica.
+        </p>
+    </section>
+
+    <hr>
+
+    <p>
+        <a href="servidor.html">&laquo; 2. El servidor web</a> &nbsp;|&nbsp;
+        <a href="ejemplo.html">4. Ejemplo práctico &raquo;</a>
+    </p>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>
+        Simulador Web Educativo - Fundamentos de Tecnologías Web (Unidades 1 a 3)<br>
+    </p>
+</footer>
+
+</body>
+</html>
