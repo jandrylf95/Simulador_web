@@ -12,3 +12,24 @@
 .skip-link:focus {
     left: 0;
 }
+
+/* Foco más visible en enlaces y botones. */
+a:focus,
+button:focus,
+.btn:focus,
+.nav-link:focus,
+.accordion-button:focus {
+    outline: 3px solid #ffc107;
+    outline-offset: 2px;
+}
+
+/* Centra las imágenes de los esquemas dentro de su figura. */
+figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Pequeño espacio bajo cada figura. */
+figure {
+    margin-bottom: 0;
+}

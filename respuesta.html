@@ -36,53 +36,107 @@
 
 <hr>
 
-<main>
-    <h2>Respuesta y renderizado HTML5</h2>
+<main id="contenido" class="container my-4">
 
+    <h1 class="h2 mb-3">Respuesta y renderizado HTML5</h1>
     <p>
         El navegador recibe el documento HTML dentro de la respuesta y empieza a interpretarlo.
         HTML5 incorpora etiquetas semánticas, que describen el significado de cada parte de la página.
     </p>
 
-    <section>
-        <h3>¿Por qué etiquetas semánticas?</h3>
-        <p>
-            Las etiquetas semánticas indican qué tipo de contenido tiene cada sección,
-            y no solamente cómo se ve. Esto mejora la accesibilidad (los lectores de pantalla
-            entienden mejor la estructura) y también el SEO (los buscadores interpretan mejor la página).
-        </p>
-
-        <figure>
-            <img src="img/estructura-semantica.svg" width="550"
-                 alt="Esquema de la estructura semántica de HTML5 con header, nav, main, article, section, aside y footer.">
-            <figcaption>Figura 4. Principales etiquetas semánticas de HTML5.</figcaption>
-        </figure>
+    <!-- Card: por qué etiquetas semánticas -->
+    <section class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5 card-title">¿Por qué etiquetas semánticas?</h2>
+            <p class="card-text">
+                Las etiquetas semánticas indican qué tipo de contenido tiene cada sección,
+                y no solamente cómo se ve. Esto mejora la accesibilidad (los lectores de pantalla
+                entienden mejor la estructura) y también el SEO (los buscadores interpretan mejor la página).
+            </p>
+            <figure>
+                <img src="img/estructura-semantica.svg" class="img-fluid" width="550"
+                     alt="Esquema de la estructura semántica de HTML5 con header, nav, main, article, section, aside y footer.">
+                <figcaption class="text-center text-secondary fst-italic mt-2">
+                    Figura 4. Principales etiquetas semánticas de HTML5.
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
-    <hr>
+    <!-- Componente enriquecido: ACORDEÓN con los elementos semánticos -->
+    <h2 class="h4 mb-3">Elementos semánticos y su función</h2>
+    <p>Haz clic en cada elemento para ver su explicación:</p>
 
-    <section>
-        <h3>Elementos semánticos y su función</h3>
-        <ul>
-            <li><strong>&lt;header&gt;</strong> - encabezado de la página o de una sección.</li>
-            <li><strong>&lt;nav&gt;</strong> - bloque de enlaces de navegación.</li>
-            <li><strong>&lt;main&gt;</strong> - contenido principal de la página.</li>
-            <li><strong>&lt;article&gt;</strong> - contenido que tiene sentido por sí mismo.</li>
-            <li><strong>&lt;section&gt;</strong> - agrupa contenido relacionado por tema.</li>
-            <li><strong>&lt;aside&gt;</strong> - contenido complementario, como una barra lateral.</li>
-            <li><strong>&lt;footer&gt;</strong> - pie de página con créditos o enlaces.</li>
-            <li><strong>&lt;figure&gt; y &lt;figcaption&gt;</strong> - una imagen junto con su descripción.</li>
-        </ul>
-    </section>
+    <div class="accordion mb-4" id="acordeonSemantica">
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item1" aria-expanded="true" aria-controls="item1">
+                    &lt;header&gt; y &lt;footer&gt;
+                </button>
+            </h3>
+            <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#acordeonSemantica">
+                <div class="accordion-body">
+                    <strong>&lt;header&gt;</strong> es el encabezado de la página o de una sección (logo, título).
+                    <strong>&lt;footer&gt;</strong> es el pie de página, con créditos o enlaces.
+                </div>
+            </div>
+        </div>
 
-    <hr>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item2" aria-expanded="false" aria-controls="item2">
+                    &lt;nav&gt; y &lt;main&gt;
+                </button>
+            </h3>
+            <div id="item2" class="accordion-collapse collapse" data-bs-parent="#acordeonSemantica">
+                <div class="accordion-body">
+                    <strong>&lt;nav&gt;</strong> agrupa los enlaces de navegación.
+                    <strong>&lt;main&gt;</strong> contiene el contenido principal y único de la página.
+                </div>
+            </div>
+        </div>
 
-    <section>
-        <h3>Ejemplo de código HTML5</h3>
-        <p>Así se ve una estructura semántica básica que el navegador va a interpretar:</p>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item3" aria-expanded="false" aria-controls="item3">
+                    &lt;article&gt;, &lt;section&gt; y &lt;aside&gt;
+                </button>
+            </h3>
+            <div id="item3" class="accordion-collapse collapse" data-bs-parent="#acordeonSemantica">
+                <div class="accordion-body">
+                    <strong>&lt;article&gt;</strong> es contenido que tiene sentido por sí mismo.
+                    <strong>&lt;section&gt;</strong> agrupa contenido relacionado por tema.
+                    <strong>&lt;aside&gt;</strong> es contenido complementario, como una barra lateral.
+                </div>
+            </div>
+        </div>
 
-        <pre>
-&lt;!DOCTYPE html&gt;
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#item4" aria-expanded="false" aria-controls="item4">
+                    &lt;figure&gt; y &lt;figcaption&gt;
+                </button>
+            </h3>
+            <div id="item4" class="accordion-collapse collapse" data-bs-parent="#acordeonSemantica">
+                <div class="accordion-body">
+                    <strong>&lt;figure&gt;</strong> agrupa una imagen y <strong>&lt;figcaption&gt;</strong>
+                    le añade una descripción o pie de foto.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card: ejemplo de código -->
+    <section class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5 card-title">Ejemplo de código HTML5</h2>
+            <p class="card-text">Así se ve una estructura semántica básica que el navegador va a interpretar:</p>
+
+            <pre class="bg-dark text-light p-3 rounded"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="es"&gt;
   &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -99,31 +153,36 @@
     &lt;/main&gt;
     &lt;footer&gt;Pie de página&lt;/footer&gt;
   &lt;/body&gt;
-&lt;/html&gt;
-        </pre>
+&lt;/html&gt;</code></pre>
 
-        <p>
-            De hecho, esta misma página usa header, nav, main, section y footer
-            para organizar su contenido de forma semántica.
-        </p>
+            <!-- Alert de éxito -->
+            <div class="alert alert-success mb-0" role="alert">
+                De hecho, esta misma página usa header, nav, main, section y footer
+                para organizar su contenido de forma semántica.
+            </div>
+        </div>
     </section>
 
-    <hr>
-
-    <p>
-        <a href="servidor.html">&laquo; 2. El servidor web</a> &nbsp;|&nbsp;
-        <a href="ejemplo.html">4. Ejemplo práctico &raquo;</a>
-    </p>
+    <div class="d-flex justify-content-between">
+        <a href="servidor.html" class="btn btn-outline-secondary">&laquo; 2. El servidor web</a>
+        <a href="ejemplo.html" class="btn btn-primary">4. Ejemplo práctico &raquo;</a>
+    </div>
 
 </main>
 
-<hr>
 
-<footer>
-    <p>
-        Simulador Web Educativo - Fundamentos de Tecnologías Web (Unidades 1 a 3)<br>
-    </p>
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <p class="mb-1">Simulador Web Educativo - Tecnologías Web (Unidades 1 a 3)</p>
+        <p class="mb-0 small">
+            Fuentes:
+            <a class="link-light" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>
+            y
+            <a class="link-light" href="https://www.w3.org/standards/" target="_blank" rel="noopener">W3C</a>
+        </p>
+    </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

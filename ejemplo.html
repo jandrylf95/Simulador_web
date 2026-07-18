@@ -35,150 +35,167 @@
 </header>
 
 
-<main>
-    <h2>Ejemplo práctico: mini página renderizada</h2>
+<main id="contenido" class="container my-4">
 
+    <h1 class="h2 mb-3">Ejemplo práctico: mini página renderizada</h1>
     <p>
         Esta es la última fase: el navegador ya interpretó el HTML y muestra la página.
         Abajo hay una mini página de ejemplo que reúne los elementos básicos de HTML
         que vimos: imagen, lista, texto, tabla y formulario.
     </p>
 
-    <section>
-        <h3>Una imagen ilustrativa</h3>
-        <p>
-            El navegador convierte cada etiqueta del código en un elemento visual.
-            Este esquema muestra cómo el código se transforma en la página que vemos:
-        </p>
-
-        <figure>
-            <img src="img/render-html.svg" width="680"
-                 alt="Esquema que compara el código HTML con el resultado visual: título, imagen, lista, tabla y formulario.">
-            <figcaption>Figura 5. El navegador transforma el código en una interfaz visual.</figcaption>
-        </figure>
+    <!-- Card: imagen ilustrativa -->
+    <section class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5 card-title">Una imagen ilustrativa</h2>
+            <p class="card-text">
+                El navegador convierte cada etiqueta del código en un elemento visual.
+                Este esquema muestra cómo el código se transforma en la página que vemos:
+            </p>
+            <figure>
+                <img src="img/render-html.svg" class="img-fluid" width="680"
+                     alt="Esquema que compara el código HTML con el resultado visual: título, imagen, lista, tabla y formulario.">
+                <figcaption class="text-center text-secondary fst-italic mt-2">
+                    Figura 5. El navegador transforma el código en una interfaz visual.
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
-    <hr>
-
-    <!-- Uso article porque este bloque tiene sentido por si solo -->
-    <article>
-        <h3>Texto y lista de contenidos</h3>
-        <p>
-            Las páginas combinan texto con elementos de estructura. Por ejemplo,
-            una lista organiza la información de forma clara. Estos son los elementos
-            básicos que suele tener una página:
-        </p>
-        <ul>
-            <li>Texto: títulos (&lt;h1&gt; a &lt;h6&gt;) y párrafos (&lt;p&gt;).</li>
-            <li>Imágenes: con la etiqueta &lt;img&gt;.</li>
-            <li>Enlaces: hipervínculos con &lt;a href&gt;.</li>
-            <li>Listas: ordenadas &lt;ol&gt; y no ordenadas &lt;ul&gt;.</li>
-            <li>Tablas y formularios: para datos y entrada de información.</li>
-        </ul>
+    <!-- Article: texto y lista (tiene sentido por sí solo) -->
+    <article class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5 card-title">Texto y lista de contenidos</h2>
+            <p class="card-text">
+                Las páginas combinan texto con elementos de estructura. Por ejemplo,
+                una lista organiza la información de forma clara. Estos son los elementos
+                básicos que suele tener una página:
+            </p>
+            <ul>
+                <li>Texto: títulos (&lt;h1&gt; a &lt;h6&gt;) y párrafos (&lt;p&gt;).</li>
+                <li>Imágenes: con la etiqueta &lt;img&gt;.</li>
+                <li>Enlaces: hipervínculos con &lt;a href&gt;.</li>
+                <li>Listas: ordenadas &lt;ol&gt; y no ordenadas &lt;ul&gt;.</li>
+                <li>Tablas y formularios: para datos y entrada de información.</li>
+            </ul>
+        </div>
     </article>
 
-    <hr>
-
-    <section>
-        <h3>Una tabla de datos</h3>
-        <p>
-            Las tablas muestran información en filas y columnas. Aquí un resumen
-            de las tecnologías que intervienen en cada fase del proceso web:
-        </p>
-
-        <table border="1" cellpadding="6" cellspacing="0">
-            <tr>
-                <th>Fase</th>
-                <th>Tecnología</th>
-                <th>Rol</th>
-            </tr>
-            <tr>
-                <td>Cliente</td>
-                <td>HTML, CSS, JavaScript</td>
-                <td>Estructura, estilo e interacción.</td>
-            </tr>
-            <tr>
-                <td>Comunicación</td>
-                <td>HTTP</td>
-                <td>Transporte de peticiones y respuestas.</td>
-            </tr>
-            <tr>
-                <td>Servidor</td>
-                <td>Apache / XAMPP</td>
-                <td>Procesa la solicitud y entrega recursos.</td>
-            </tr>
-            <tr>
-                <td>Lógica</td>
-                <td>PHP, Python, Node.js</td>
-                <td>Genera contenido dinámico.</td>
-            </tr>
-        </table>
+    <!-- Card: tabla de tecnologías -->
+    <section class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5 card-title">Una tabla de datos</h2>
+            <p class="card-text">
+                Las tablas muestran información en filas y columnas. Aquí un resumen
+                de las tecnologías que intervienen en cada fase del proceso web:
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Fase</th>
+                            <th scope="col">Tecnología</th>
+                            <th scope="col">Rol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cliente</td>
+                            <td>HTML, CSS, JavaScript</td>
+                            <td>Estructura, estilo e interacción.</td>
+                        </tr>
+                        <tr>
+                            <td>Comunicación</td>
+                            <td>HTTP</td>
+                            <td>Transporte de peticiones y respuestas.</td>
+                        </tr>
+                        <tr>
+                            <td>Servidor</td>
+                            <td>Apache / XAMPP</td>
+                            <td>Procesa la solicitud y entrega recursos.</td>
+                        </tr>
+                        <tr>
+                            <td>Lógica</td>
+                            <td>PHP, Python, Node.js</td>
+                            <td>Genera contenido dinámico.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
 
-    <hr>
-
-    <section>
-        <h3>Un formulario de ejemplo</h3>
-        <p>
-            Los formularios permiten enviar datos al servidor. Este formulario de contacto
-            usa varios tipos de campos. Al enviarlo con el método POST, los datos viajarían
-            en el cuerpo de la petición.
-        </p>
-
-        <form action="#" method="post">
-            <p>
-                <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre" name="nombre" size="40" required>
+    <!-- Card: formulario con estilos de Bootstrap -->
+    <section class="card mb-4">
+        <div class="card-body">
+            <h2 class="h5 card-title">Un formulario de ejemplo</h2>
+            <p class="card-text">
+                Los formularios permiten enviar datos al servidor. Este formulario de contacto
+                usa varios tipos de campos. Al enviarlo con el método POST, los datos viajarían
+                en el cuerpo de la petición.
             </p>
 
-            <p>
-                <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo" size="40" required>
-            </p>
+            <form action="#" method="post">
+                <!-- Fila responsive: dos columnas en escritorio, una en móvil -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                </div>
 
-            <p>
-                <label for="tema">Tema de interés:</label><br>
-                <select id="tema" name="tema">
-                    <option value="http">Protocolo HTTP</option>
-                    <option value="servidores">Servidores web</option>
-                    <option value="html5">HTML5 y semántica</option>
-                    <option value="diseno">Diseño web</option>
-                </select>
-            </p>
+                <div class="mb-3">
+                    <label for="tema" class="form-label">Tema de interés</label>
+                    <select class="form-select" id="tema" name="tema">
+                        <option value="http">Protocolo HTTP</option>
+                        <option value="servidores">Servidores web</option>
+                        <option value="html5">HTML5 y semántica</option>
+                        <option value="diseno">Diseño web</option>
+                    </select>
+                </div>
 
-            <p>
-                <label for="mensaje">Mensaje o comentario:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea>
-            </p>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje o comentario</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
 
-            <p>
-                <input type="submit" value="Enviar formulario">
-            </p>
-        </form>
-
-        <p>
-            <strong>Proceso completo.</strong> Recorrimos las cinco fases: desde escribir
-            la URL hasta ver una página renderizada con todos sus elementos. Este formulario,
-            al enviarse, empezaría el ciclo otra vez con una nueva petición HTTP.
-        </p>
+                <button type="submit" class="btn btn-primary">Enviar formulario</button>
+            </form>
+        </div>
     </section>
 
-    <hr>
+    <!-- Alert de éxito -->
+    <div class="alert alert-success" role="alert">
+        <strong>Proceso completo.</strong> Recorrimos las cinco fases: desde escribir
+        la URL hasta ver una página renderizada con todos sus elementos. Este formulario,
+        al enviarse, empezaría el ciclo otra vez con una nueva petición HTTP.
+    </div>
 
-    <p>
-        <a href="respuesta.html">&laquo; 3. Respuesta y HTML5</a> &nbsp;|&nbsp;
-        <a href="index.html">Volver al inicio</a>
-    </p>
+    <div class="d-flex justify-content-between">
+        <a href="respuesta.html" class="btn btn-outline-secondary">&laquo; 3. Respuesta y HTML5</a>
+        <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+    </div>
 
 </main>
 
 <hr>
 
-<footer>
-    <p>
-        Simulador Web Educativo - Fundamentos de Tecnologías Web (Unidades 1 a 3)<br>
-    </p>
+<footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <p class="mb-1">Simulador Web Educativo - Tecnologías Web (Unidades 1 a 3)</p>
+        <p class="mb-0 small">
+            Fuentes:
+            <a class="link-light" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>
+            y
+            <a class="link-light" href="https://www.w3.org/standards/" target="_blank" rel="noopener">W3C</a>
+        </p>
+    </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
