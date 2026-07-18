@@ -1,0 +1,14 @@
+/* Enlace "Saltar al contenido": oculto hasta que recibe foco.
+   Ayuda a quien navega con teclado o lector de pantalla. */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #0d6efd;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 1050;
+}
+.skip-link:focus {
+    left: 0;
+}
