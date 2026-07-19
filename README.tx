@@ -1,0 +1,55 @@
+Simulador Web Educativo - Rediseño con Bootstrap
+
+Estudiante: Jandry Loayza Feijoo
+
+
+# ESTRUCTURA DEL PROYECTO
+    -- index.html
+    -- solicitud.html
+    -- servidor.html
+    -- respuesta.html
+    -- ejemplo.html
+
+    -- css
+    -- img
+    -- README.tx
+
+## FRAMEWORK UTILIZADO
+    **Bootstrap** 
+        - cargado desde un CDN (content Delivery Network)
+        - El sitio necesita conexxión a internet para cargar los estilos.
+
+        COMPONENTES UTILIZADOS
+
+            - Barra de navegación responsive
+            - Cards / paneles
+            - Grid / columnas
+            - Botones con estados hover/focus
+            - Tablas con estilos
+            - Badges
+            - Alerts
+            - Acordeón
+            - Formulario con estilos del Framework
+
+        VENTAJAS DEL FRAMEWORK
+
+            - Ventaja 1 — Componentes ya hechos y listos para usar: 
+                en lugar de escribir cientos de líneas de CSS para lograr, por ejemplo, una barra de navegación que se adapte al móvil, solo apliqué las clases del framework y el componente ya funcionaba.
+
+            - Ventaja 2 — Diseño responsive automático: 
+                su sistema de rejilla y la barra de navegación colapsable hacen que el sitio se adapte solo a móvil, tablet y escritorio, sin escribir media queries manualmente.
+
+## USABILIDAD Y ACCESIBILIDAD
+
+-- Texto alternativo en imágenes: Todas las imágenes (`<img>`) tienen el atributo
+    "alt" 
+
+-- Contraste de colores adecuado: El texto es oscuro sobre fondo claro y la barra
+   de navegación usa texto claro sobre fondo azul
+
+-- Enlace "Saltar al contenido": Un enlace oculto (visible al navegar con teclado)
+   permite ir directamente al contenido principal sin recorrer todo el menú.
+
+-- Navegación responsive con etiquetas ARIA: La barra de navegación se adapta a
+   móvil, tablet y escritorio, e incluye `aria-label` y `aria-current="page"` para
+   indicar la página activa.
